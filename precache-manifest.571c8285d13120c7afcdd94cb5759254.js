@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2105f0410874f50e735aad0ef1ecaa3a",
+    "revision": "2f565f74bb1a97de17bd03cede7c2a3b",
     "url": "/SirJuan/index.html"
   },
   {
-    "revision": "1f886e63203d6c841c50",
+    "revision": "df89d9b0d319d124ee51",
     "url": "/SirJuan/static/css/main.a8a7d17f.chunk.css"
   },
   {
-    "revision": "091451d43d643c853791",
-    "url": "/SirJuan/static/js/2.807c0a4b.chunk.js"
+    "revision": "79a086f4a7584492a6fb",
+    "url": "/SirJuan/static/js/2.2e983c15.chunk.js"
   },
   {
     "revision": "ac4a31b929cb9380c4a242904540a469",
-    "url": "/SirJuan/static/js/2.807c0a4b.chunk.js.LICENSE.txt"
+    "url": "/SirJuan/static/js/2.2e983c15.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1f886e63203d6c841c50",
-    "url": "/SirJuan/static/js/main.aba2ef91.chunk.js"
+    "revision": "df89d9b0d319d124ee51",
+    "url": "/SirJuan/static/js/main.c529ac30.chunk.js"
   },
   {
     "revision": "30f942bb7783c4b076a0017ec0876fab",
-    "url": "/SirJuan/static/js/main.aba2ef91.chunk.js.LICENSE.txt"
+    "url": "/SirJuan/static/js/main.c529ac30.chunk.js.LICENSE.txt"
   },
   {
     "revision": "648bad52fdaee313d0ca",
@@ -36,32 +36,24 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/SirJuan/static/media/clem-onojeghuo-2.bb4b9ac9.jpg"
   },
   {
-    "revision": "ae11d928aae96245020bb59a1910f758",
-    "url": "/SirJuan/static/media/clem-onojeghuo-3.ae11d928.jpg"
-  },
-  {
     "revision": "61c4e0007254eb55e4691291881a4bfb",
     "url": "/SirJuan/static/media/clouds.61c4e000.png"
   },
   {
-    "revision": "df0cdbfb2c70d9857e3776eb83a5a4eb",
-    "url": "/SirJuan/static/media/creative-tim-white-slim2.df0cdbfb.png"
-  },
-  {
-    "revision": "facbbdb787d77f975904ba9fa99b15c6",
-    "url": "/SirJuan/static/media/daniel-olahh.facbbdb7.jpg"
+    "revision": "b67b42b616a64901f49ab4139ee10b70",
+    "url": "/SirJuan/static/media/domination.b67b42b6.jpg"
   },
   {
     "revision": "2051e0e847124c536df9c01a3f672032",
     "url": "/SirJuan/static/media/erik-lucatero-2.2051e0e8.jpg"
   },
   {
-    "revision": "f26c34bb88eb83d5aae99c7dbf3ddd48",
-    "url": "/SirJuan/static/media/fabio-mangione.f26c34bb.jpg"
-  },
-  {
     "revision": "1331ba97560cc13103d379a8843ad1dc",
     "url": "/SirJuan/static/media/federico-beccari.1331ba97.jpg"
+  },
+  {
+    "revision": "b4f4eb3ee551029a93eda047be7eb5ab",
+    "url": "/SirJuan/static/media/feet.b4f4eb3e.jpg"
   },
   {
     "revision": "7812184c3710d9623c684956fe048ddd",
@@ -74,6 +66,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "394186b2e9d7eee0d0bf520a57c9b2a5",
     "url": "/SirJuan/static/media/img2.394186b2.jpg"
+  },
+  {
+    "revision": "38b47a2207d70d63a819d9c275fc1898",
+    "url": "/SirJuan/static/media/img3.38b47a22.jpg"
+  },
+  {
+    "revision": "94ecb29c87dbadf5502414621cb27ba3",
+    "url": "/SirJuan/static/media/img4.94ecb29c.jpg"
   },
   {
     "revision": "76ff47ae5c64ccda5af18326bb272058",
@@ -118,6 +118,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "29df8117c07250e9b1ea8e3a67627f67",
     "url": "/SirJuan/static/media/soroush-karimi.29df8117.jpg"
+  },
+  {
+    "revision": "df1fde86f0d9291ee29afced165989c1",
+    "url": "/SirJuan/static/media/trample.df1fde86.jpg"
   },
   {
     "revision": "fe3a7838dddb1fbf6901af17ca246ea1",
