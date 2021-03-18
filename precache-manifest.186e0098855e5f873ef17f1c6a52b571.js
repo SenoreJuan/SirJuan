@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "2f565f74bb1a97de17bd03cede7c2a3b",
+    "revision": "2e3d1130f34d358f550af7e260b2fe22",
     "url": "/SirJuan/index.html"
   },
   {
-    "revision": "df89d9b0d319d124ee51",
+    "revision": "9b118d3e88840c4797f1",
     "url": "/SirJuan/static/css/main.a8a7d17f.chunk.css"
   },
   {
-    "revision": "79a086f4a7584492a6fb",
-    "url": "/SirJuan/static/js/2.2e983c15.chunk.js"
+    "revision": "fdf7a7d78755ea06f99f",
+    "url": "/SirJuan/static/js/2.29ba502f.chunk.js"
   },
   {
     "revision": "ac4a31b929cb9380c4a242904540a469",
-    "url": "/SirJuan/static/js/2.2e983c15.chunk.js.LICENSE.txt"
+    "url": "/SirJuan/static/js/2.29ba502f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "df89d9b0d319d124ee51",
-    "url": "/SirJuan/static/js/main.c529ac30.chunk.js"
+    "revision": "9b118d3e88840c4797f1",
+    "url": "/SirJuan/static/js/main.c694812e.chunk.js"
   },
   {
     "revision": "30f942bb7783c4b076a0017ec0876fab",
-    "url": "/SirJuan/static/js/main.c529ac30.chunk.js.LICENSE.txt"
+    "url": "/SirJuan/static/js/main.c694812e.chunk.js.LICENSE.txt"
   },
   {
     "revision": "648bad52fdaee313d0ca",
