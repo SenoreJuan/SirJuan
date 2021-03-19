@@ -67,7 +67,15 @@ function IndexNavbar() {
         <div className="navbar-translate">
           <NavbarBrand
             data-placement="bottom"
-            href="/about"
+            href="https://senorejuan.github.io/SirJuan/#/"
+            
+            title="Coded by Creative Tim"
+          >
+           página inicial
+          </NavbarBrand>
+          <NavbarBrand
+            data-placement="bottom"
+            href="https://senorejuan.github.io/SirJuan/#/about"
             
             title="Coded by Creative Tim"
           >

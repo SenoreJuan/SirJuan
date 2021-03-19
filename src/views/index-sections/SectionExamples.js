@@ -41,7 +41,7 @@ function SectionExamples() {
               <Button
                 className="btn-outline-neutral btn-round"
                 color="default"
-                href="/about"
+                href="https://senorejuan.github.io/SirJuan/#/about"
                 target="_blank"
               >
                 Landing Page

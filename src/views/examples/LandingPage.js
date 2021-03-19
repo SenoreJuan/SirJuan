@@ -20,6 +20,9 @@ import React from "react";
 
 // reactstrap components
 import {
+  Toast,
+  ToastBody,
+  ToastHeader,
   Button,
   Card,
   CardBody,
@@ -39,7 +42,12 @@ import {
 import ExamplesNavbar from "components/Navbars/ExamplesNavbar.js";
 import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DemoFooter from "components/Footers/DemoFooter.js";
-
+import Swal from 'sweetalert2'
+import emailjs from 'emailjs-com';
+const state = {
+  message: { usename: '', email: '', body: '' },
+  alert: 'hi'
+}
 function LandingPage() {
   document.documentElement.classList.remove("nav-open");
   React.useEffect(() => {
@@ -48,9 +56,46 @@ function LandingPage() {
       document.body.classList.remove("profile-page");
     };
   });
+  const onSubmit = (e) => {
+    e.preventDefault();
+    console.log(e);
+    Swal.fire({
+
+      icon: 'error',
+      title: 'Correo electrónico no configurado',
+      showConfirmButton: false,
+      timer: 2000
+
+    })
+  /*   emailjs.send("service_diqcwdv", "template_uwludbs", {
+      from_name: `${state.message.usename} (${state.message.email})`,
+      to_name: "Sir Juan",
+      message: state.message.body,
+    }, "user_frH93N9mGkC89u33ezVL8").then(result => {
+      Swal.fire({
+
+        icon: 'success',
+        title: 'Mensaje enviado con éxito',
+        showConfirmButton: false,
+        timer: 2000
+
+      })
+    },
+      error => {
+        console.log(error);
+        Swal.fire({
+
+          icon: 'error',
+          title: 'erroe ' + error.message,
+          showConfirmButton: false,
+          timer: 2000
+
+        })
+      }) */
+  }
   return (
     <>
-{/*       <ExamplesNavbar /> */}
+      {/*       <ExamplesNavbar /> */}
       <LandingPageHeader />
       <div className="main">
         <div className="section section-dark text-center">
@@ -74,7 +119,7 @@ function LandingPage() {
                   href="#pablo"
                   onClick={(e) => e.preventDefault()}
                 >
-                 ver más
+                  ver más
                 </Button>
               </Col>
             </Row>
@@ -95,10 +140,10 @@ function LandingPage() {
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
                         <CardTitle tag="h4">Dominación</CardTitle>
-                        
+
                       </div>
                     </a>
-                   
+
                   </CardBody></Card>
               </Col>
               <Col md="4">
@@ -115,12 +160,12 @@ function LandingPage() {
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
                         <CardTitle tag="h4">Pisoteando</CardTitle>
-                       
+
                       </div>
                     </a>
-                    
+
                   </CardBody>
-        </Card>
+                </Card>
               </Col>
               <Col md="4">
                 <Card className="card-profile card-plain">
@@ -136,22 +181,22 @@ function LandingPage() {
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
                         <CardTitle tag="h4">pies lamiendo</CardTitle>
-                      
+
                       </div>
                     </a>
-                  
+
                   </CardBody>
                 </Card>
               </Col>
             </Row>
-        </Container>
+          </Container>
         </div>
         <div className="section landing-section">
           <Container>
             <Row>
               <Col className="ml-auto mr-auto" md="8">
                 <h2 className="text-center">Contáctame</h2>
-                <Form className="contact-form">
+                <Form className="contact-form" onSubmit={(e) => onSubmit(e)}>
                   <Row>
                     <Col md="6">
                       <label>Nombre</label>
@@ -161,7 +206,7 @@ function LandingPage() {
                             <i className="nc-icon nc-single-02" />
                           </InputGroupText>
                         </InputGroupAddon>
-                        <Input placeholder="Name" type="text" />
+                        <Input placeholder="Nombre" type="text" required onChange={(e) => { state.message.usename = e.target.value }} />
                       </InputGroup>
                     </Col>
                     <Col md="6">
@@ -172,20 +217,22 @@ function LandingPage() {
                             <i className="nc-icon nc-email-85" />
                           </InputGroupText>
                         </InputGroupAddon>
-                        <Input placeholder="Email" type="text" />
+                        <Input placeholder="Email" type="email" required onChange={(e) => { state.message.email = e.target.value }} />
                       </InputGroup>
                     </Col>
                   </Row>
                   <label>Mensaje</label>
                   <Input
-                    placeholder="Tell us your thoughts and feelings..."
+                    placeholder="Escribe tu mensaje aquí ..."
+                    onChange={(e) => { state.message.body = e.target.value }}
                     type="textarea"
+                    required
                     rows="4"
                   />
                   <Row>
                     <Col className="ml-auto mr-auto" md="4">
-                      <Button className="btn-fill" color="danger" size="lg">
-                      Enviar mensaje
+                      <Button className="btn-fill" color="danger" size="lg" >
+                        Enviar mensaje
                       </Button>
                     </Col>
                   </Row>

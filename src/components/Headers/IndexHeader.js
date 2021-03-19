@@ -25,8 +25,10 @@ import { Container } from "reactstrap";
 // core components
 
 function IndexHeader() {
+
   return (
     <>
+    
       <div
         className="page-header section-dark"
         style={{
