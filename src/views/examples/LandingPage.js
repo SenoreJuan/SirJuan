@@ -59,19 +59,20 @@ function LandingPage() {
   const onSubmit = (e) => {
     e.preventDefault();
     console.log(e);
-    Swal.fire({
+    /* Swal.fire({
 
       icon: 'error',
       title: 'Correo electrónico no configurado',
       showConfirmButton: false,
       timer: 2000
 
-    })
-  /*   emailjs.send("service_diqcwdv", "template_uwludbs", {
+    }) */
+    
+    emailjs.send("service_k6h6tns","template_0l1it3y", {
       from_name: `${state.message.usename} (${state.message.email})`,
       to_name: "Sir Juan",
       message: state.message.body,
-    }, "user_frH93N9mGkC89u33ezVL8").then(result => {
+    }, "user_ilAsCgY8HTSiIFLkBF2KA").then(result => {
       Swal.fire({
 
         icon: 'success',
@@ -91,7 +92,7 @@ function LandingPage() {
           timer: 2000
 
         })
-      }) */
+      })
   }
   return (
     <>
@@ -231,7 +232,7 @@ function LandingPage() {
                   />
                   <Row>
                     <Col className="ml-auto mr-auto" md="4">
-                      <Button className="btn-fill" color="danger" size="lg" >
+                      <Button className="btn-fill" color="danger" size="lg" type="submit" >
                         Enviar mensaje
                       </Button>
                     </Col>
